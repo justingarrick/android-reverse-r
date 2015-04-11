@@ -10,7 +10,7 @@ is transformed into:
 This is useful for analysis of decompiled code because strings such as `R.layout.activity_activate` are more semantically meaningful than `213903041`.  
 
 ##Building
-Clone this repo and run `./gradlew shadowJar`. This will create a `/build/libs/android-reverse-r-1.0-all.jar` file.  Alternatively, you can download the [latest release](https://github.com/justingarrick/android-reverse-r/releases).
+Install [JDK8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html), clone this repo, and run `./gradlew shadowJar`. This will create a `/build/libs/android-reverse-r-1.0-all.jar` file.  Alternatively, you can download the [latest release](https://github.com/justingarrick/android-reverse-r/releases).
 
 ##Running
-Install [JDK8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and run `java -jar android-reverse-r-1.0-all.jar`.  The `-src` and `-pkg` options are used to specify the folder containing the source files and the package name to be reversed, respectively.  For example, `java -jar android-reverse-r-1.0-all.jar -src /Users/justin/DecompiledSource -pkg com.interesting.application`.
+Run `java -jar android-reverse-r-1.0-all.jar`.  The `-src` and `-pkg` options are used to specify the folder containing the source files and the package name to be reversed, respectively.  For example, `java -jar android-reverse-r-1.0-all.jar -src /Users/justin/DecompiledSource -pkg com.interesting.application`.
