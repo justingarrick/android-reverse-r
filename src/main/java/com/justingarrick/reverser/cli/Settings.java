@@ -39,7 +39,7 @@ public class Settings {
 
     /** The fully qualified package name of the R.java file to be reversed. */
     @Parameter(names = "-pkg",
-            description = "Package name of R.java file(s) to reverse, default = all",
+            description = "Package name of R.java file(s) to reverse",
             required = true)
     private String packageName = null;
 

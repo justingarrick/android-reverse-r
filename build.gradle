@@ -15,10 +15,19 @@
  */
 
 apply plugin: 'java'
+apply plugin: 'application'
 apply plugin: 'com.github.johnrengelman.shadow'
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 version = '1.0'
+mainClassName = "com.justingarrick.reverser.Reverser"
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+}
 
 repositories {
     mavenCentral()
