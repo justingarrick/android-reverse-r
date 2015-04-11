@@ -5,7 +5,6 @@ Thumbs.db
 # IDEA
 .gradle
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
+/.idea
 .DS_Store
 /build
