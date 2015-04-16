@@ -16,4 +16,4 @@ Install [JDK8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-down
 Run `java -jar android-reverse-r-1.0.0-all.jar`.  The `-src` and `-pkg` options are used to specify the folder containing the source files and the package name to be reversed, respectively.  
 
 For example:  
-`java -jar android-reverse-r-1.0.0-all.jar -src /Users/justin/DecompiledSource -pkg com.interesting.application`.
+`java -jar android-reverse-r-1.0.0-all.jar -src /Users/justin/DecompiledSource -pkg com.interesting.application`
