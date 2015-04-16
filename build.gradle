@@ -43,4 +43,6 @@ buildscript {
 dependencies {
     compile 'com.beust:jcommander:1.47'
     compile 'com.github.javaparser:javaparser-core:2.0.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.assertj:assertj-core:3.0.0'
 }
