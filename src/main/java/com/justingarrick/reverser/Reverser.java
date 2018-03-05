@@ -152,7 +152,7 @@ public class Reverser {
                         VariableDeclarator variable = field.getVariables().stream().findFirst().get();
                         String name = variable.getId().toString();
                         Integer value = null != variable.getInit() ? Integer.parseInt(variable.getInit().toString()) : 0;
-                        // decimal value of 0x7f000000, which is what AAPT starts numbering at - http://stackoverflow.com/a/6646113/311304
+                        // decimal value of 0x7f000000, which is what AAPT starts numbering at - https://stackoverflow.com/questions/6517151/how-does-the-mapping-between-android-resources-and-resources-id-work/6646113#6646113
                         if (value >= 2130706432) {
                             name = "R." + ((ClassOrInterfaceDeclaration)field.getParentNode()).getName() + "." + name;
                             transform.put(value, name);
